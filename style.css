@@ -1,0 +1,15 @@
+/*la till 2 olika fonts från webben, ville ha det lite mer gotisk men det här är bra nog */
+
+@font-face {
+    font-family: antique;
+    src: url(caslon-antique.ttf)
+}
+
+@font-face {
+    font-family: boldgothic;
+    src: url(league-gothic.ttf)
+}
+
+*{
+    margin: 0;
+}
