@@ -132,3 +132,7 @@ body {
     height: 50vh;
     background-color: darkorchid;
 }
+
+.featured-title{
+    width: 200px;
+}
