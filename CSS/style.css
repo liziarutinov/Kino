@@ -131,6 +131,9 @@ body {
 .featured-content{
     height: 50vh;
     padding: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/the-vampire-diaries.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .featured-title{
@@ -144,5 +147,5 @@ body {
 }
 
 .featured-button{
-    
+    color: purple;
 }
