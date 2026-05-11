@@ -1,19 +1,15 @@
 @font-face {
     font-family: 'antique';
-    src: url(caslon-antique.ttf)
+    src: url(../caslon-antique.ttf)
 }
 
 @font-face {
     font-family: 'boldgothic';
-    src: url(league-gothic.ttf)
+    src: url(../league-gothic.ttf)
 }
 
 *{
     margin: 0;
-}
-
-body {
-    font-family: antique;
 }
 
 .navbar{
@@ -120,7 +116,7 @@ body {
 
 .container{
     background-color: #151515;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     color: white;
 }
 
@@ -142,10 +138,110 @@ body {
 
 .featured-desc {
   width: 500px;
-  color: lightgray;
+  color: white;
   margin: 30px 0;
 }
 
 .featured-button{
-    color: purple;
+    background-color:rgb(83, 0, 111);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.movie-list-container{
+    padding: 20px;
+}
+
+.movie-list-wrapper{
+    position: relative;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc{
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    opacity: 0;
+    width: 230px;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button{
+    padding: 10px;
+    background-color: rgb(83, 0, 111);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: gray;
+    opacity: 0.5;
+}
+
+.featured-content-2{
+    height: 50vh;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/donnie-darko.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
