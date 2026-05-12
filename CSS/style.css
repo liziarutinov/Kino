@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'boldgothic';
-    src: url(../league-gothic.ttf)
+    font-family: 'gothic';
+    src: url(../OldLondon.ttf)
 }
 
 *{
@@ -33,7 +33,20 @@
 
 .logo {
     font-size: 30px;
-    color: rgb(83, 0, 111);
+    animation: my-animation 1.5s infinite alternate;
+    font-family: gothic;
+}
+
+@keyframes my-animation{
+    0% {
+        color: rgb(83, 0, 111);
+    }
+    50%{
+        color: darkgreen;
+    }
+    100%{
+        color: darkred;
+    }
 }
 
 .menu-container{
