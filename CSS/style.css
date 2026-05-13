@@ -1,9 +1,4 @@
 @font-face {
-    font-family: 'antique';
-    src: url(../caslon-antique.ttf)
-}
-
-@font-face {
     font-family: 'gothic';
     src: url(../OldLondon.ttf)
 }
@@ -60,6 +55,7 @@
 
 .menu-list-item{
     margin-right: 30px;
+    text-decoration: underline;
 }
 
 .menu-list-item.active{
@@ -126,6 +122,7 @@
     color: white;
     font-size: 20px;
     margin-bottom: 60px;
+    cursor: pointer;
 }
 
 .container{
