@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Contact</title>
+    <title>KINO Contact</title>
 </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
                         </ul>
                     </div>
                     <div class="profile-container">
-                        <img class="profile-picture" src="img/Petra.jpg" alt="Profile Picture">
+                        <img class="profile-picture" src="img/Petra.jpg" alt="profilbild på Petra">
                         <div class="profile-text-container">
                             <span class="profile-text">Profile</span>
                             <i class="fa-solid fa-caret-down"></i>
@@ -44,8 +44,78 @@
             </div>
         </nav>
     </header>
+
+
+    <main>
+        <div class="container">
+            <div class="content-container contact-page">
+                <section class="contact-section">
+                    <h2 class="contact-title">Contact Us!</h2>
+                    <!--Kontaktförmulär med olika input typer-->
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="email">Email-address:</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+
+                            <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select subject</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="question">Question</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" placeholder=
+                            "Write your message here..." required></textarea>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="rating">Rating (1-5):</label>
+                            <input type="range" id="rating" name="rating" min="1" max="5" value="3">
+                            <span id="ratingvalue">3</span>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="newsletter">Subscribe to newsletter</label>
+                            <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+                            <span>Yes, I want to subscribe</span>
+                        </div>
+
+
+                        <button type="submit" class="submit-button">Send message</button>
+                    </form>
+                    <p id="formfeedback" class="form-feedback"></p>
+                </section>
+
+
+                <section class="info-section">
+                    <h2>Support Hours</h2>
+                    <ul class="opening-hours">
+                        <li>Monday - Friday: 22:00 - 00:00</li>
+                        <li>Saturday - Sunday: 00:00 - 23:59</li>
+                        <li>Holidays - Unsure</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
     <footer>
-        <h2>Creator: Lizi Arutinov, professional film and series watcher</h2>
+        <h3>Creator: Lizi Arutinov, professional film and series watcher</h3>
     </footer>
+
+    
+    <script src="app.js"></script>
 </body>
 </html>
