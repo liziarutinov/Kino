@@ -126,6 +126,8 @@
     cursor: pointer;
 }
 
+
+/*main content */
 .container{
     background-color: #151515;
     min-height: calc(100vh - 50px);
@@ -140,6 +142,14 @@
     height: 65vh;
     padding: 50px;
     background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/the-vampire-diaries.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.featured-content-2{
+    height: 65vh;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/donnie-darko.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -256,12 +266,99 @@
     cursor: pointer;
 }
 
-.featured-content-2{
-    height: 65vh;
-    padding: 50px;
-    background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../img/donnie-darko.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+/*contact html*/
+
+.contact-page{
+    padding: 40px;
+}
+
+.contact-section, .info-section {
+    margin-bottom: 40px;
+}
+
+.contact-title, .reviews-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.form-group input[type="range"] {
+    width: 80%;
+    margin-right: 10px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: rgb(83, 0, 111);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: darkgreen;
+}
+
+.form-feedback {
+    margin-top: 15px;
+    color: #4CAF50;
+}
+
+.opening-hours {
+    background-color: #222;
+    padding: 20px 40px;
+    border-radius: 15px;
+    list-style-type: square;
+}
+
+.opening-hours li {
+    margin: 10px 0;
+    color: white;
 }
 
 .container.active{
