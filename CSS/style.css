@@ -361,6 +361,70 @@ footer{
     color: white;
 }
 
+/* Reviews */
+.rating-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+v.rating-table thead tr {
+    background-color: rgb(83, 0, 111);
+    color: white;
+}
+
+.rating-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.rating-table tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+.rating-table tbody tr:nth-child(even) {
+    background-color: #1f1f1f;
+}
+
+.rating-table td {
+    padding: 12px 15px;
+    color: white;
+}
+
+.rating-table tfoot tr {
+    background-color: #333;
+    color: gold;
+    font-weight: bold;
+}
+
+.rating-table tfoot td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Listor */
+.top-list {
+    background-color: #222;
+    padding: 20px 40px;
+    border-radius: 15px;
+    list-style-type: decimal;
+}
+
+.top-list li {
+    margin: 10px 0;
+    color: white;
+}
+
+.info-section h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
 .container.active{
     background-color: white;
 }
@@ -389,4 +453,68 @@ footer{
 .toggle-ball.active{
     background-color: white;
     transform: translateX(-20px)
+}
+
+.container.active {
+    background-color: white;
+}
+
+.container.active .movie-list-title {
+    color: black;
+}
+
+.container.active .contact-title,
+.container.active .reviews-title,
+.container.active .info-section h2 {
+    color: black;
+}
+
+.container.active .contact-form,
+.container.active .opening-hours,
+.container.active .top-list {
+    background-color: #e0e0e0;
+}
+
+.container.active .form-group label,
+.container.active .opening-hours li,
+.container.active .top-list li {
+    color: black;
+}
+
+.container.active .rating-table {
+    background-color: #f0f0f0;
+}
+
+.container.active .rating-table tbody tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+.container.active .rating-table tbody tr:nth-child(even) {
+    background-color: #d0d0d0;
+}
+
+.container.active .rating-table td {
+    color: black;
+}
+
+.navbar-container.active {
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.left-menu-icon.active {
+    color: black;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px);
 }
