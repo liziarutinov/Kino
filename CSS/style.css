@@ -267,7 +267,7 @@
 }
 
 footer{
-    background-color: black;
+    background-color: #151515;
     color: white;
     text-align: center;
     padding: 20px;
@@ -372,7 +372,7 @@ footer{
     overflow: hidden;
 }
 
-v.rating-table thead tr {
+.rating-table thead tr {
     background-color: rgb(83, 0, 111);
     color: white;
 }
@@ -407,7 +407,6 @@ v.rating-table thead tr {
     text-align: center;
 }
 
-/* Listor */
 .top-list {
     background-color: #222;
     padding: 20px 40px;
@@ -424,6 +423,8 @@ v.rating-table thead tr {
     color: white;
     margin-bottom: 15px;
 }
+
+/*light och dark mode*/
 
 .container.active{
     background-color: white;
@@ -446,6 +447,11 @@ v.rating-table thead tr {
     color: black;
 }
 
+footer.active{
+    background-color: white;
+    color: black;
+}
+
 .toggle.active{
     background-color: black;
 }
@@ -453,68 +459,4 @@ v.rating-table thead tr {
 .toggle-ball.active{
     background-color: white;
     transform: translateX(-20px)
-}
-
-.container.active {
-    background-color: white;
-}
-
-.container.active .movie-list-title {
-    color: black;
-}
-
-.container.active .contact-title,
-.container.active .reviews-title,
-.container.active .info-section h2 {
-    color: black;
-}
-
-.container.active .contact-form,
-.container.active .opening-hours,
-.container.active .top-list {
-    background-color: #e0e0e0;
-}
-
-.container.active .form-group label,
-.container.active .opening-hours li,
-.container.active .top-list li {
-    color: black;
-}
-
-.container.active .rating-table {
-    background-color: #f0f0f0;
-}
-
-.container.active .rating-table tbody tr:nth-child(odd) {
-    background-color: #e0e0e0;
-}
-
-.container.active .rating-table tbody tr:nth-child(even) {
-    background-color: #d0d0d0;
-}
-
-.container.active .rating-table td {
-    color: black;
-}
-
-.navbar-container.active {
-    background-color: white;
-    color: black;
-}
-
-.sidebar.active {
-    background-color: white;
-}
-
-.left-menu-icon.active {
-    color: black;
-}
-
-.toggle.active {
-    background-color: black;
-}
-
-.toggle-ball.active {
-    background-color: white;
-    transform: translateX(-20px);
 }
